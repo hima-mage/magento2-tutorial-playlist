@@ -1,0 +1,10 @@
+<?php
+/**
+ * @var \HimaMage\Example\Block\Example $block
+ */
+?>
+<h2><?php echo $block->subTitle(); ?></h2>
+<p><?php echo $block->welcome(); ?></p>
+<?= $block->getChildHtml("layout_note");  ?>
+<?= $block->getNoteHtml();  ?>
+<?= $block->getChildHtml("cms_block_example");  ?>

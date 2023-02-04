@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+
+    <widget id="widget_example" class="HimaMage\Example\Block\Widget\ExampleTitle"
+            >
+        <label  >Example Title</label>
+        <description  >Custom Widget</description>
+        <parameters>
+            <parameter name="title" xsi:type="text" required="true" >
+                <label>Title This the only Parameter</label>
+            </parameter>
+        </parameters>
+
+    </widget>
+</widgets>
+

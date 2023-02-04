@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+     <head>
+         <title>Layout example</title>
+     </head>
+    <body>
+        <referenceContainer name="content">
+            <block name="layout_example"
+                   class="HimaMage\Example\Block\Example"
+                   template="HimaMage_Example::example.phtml" >
+                <block name="layout_note"
+                       class="HimaMage\Example\Block\Note"
+                       template="HimaMage_Example::note.phtml" />
+                <block name="cms_block_example" class="Magento\Cms\Block\Block">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">cms_block_from_admin</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
